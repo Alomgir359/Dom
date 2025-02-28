@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+    <header class="bg-white max-w-md min-h-screen mx-auto p-5">
+        <div class="flex justify-between items-center">
+            <div class="flex gap-2 items-center">
+                <div>
+                    <img class="w-16" src="./Payoo-MFS-Resources-main/assets/Group.png" alt="">
+                </div>
+                <div>
+                    <h1 class="font-bold text-xl">$ <span id="main">45000</span></h1>
+                    <p>Available Balance</p>
+
+                </div>
+            </div>
+            <div>
+                <button class="outline px-1 rounded-md">Log out</button>
+
+            </div>
+            
+        </div>
+        <div>
+            <hr class="border border-y-gray-400 mt-10">
+        </div>
+
+
+
+        <main class="bg-white max-w-md  mx-auto p-5">
+            <div class="space-y-2">
+                <h1 class="font-bold text-2xl">Welcome to payooo!</h1>
+                <p>Enjoy easy and convenient financial services with us. <br>  Cashout charge is low and </p>
+            </div>
+    <!-- card -->
+            <div class="grid grid-cols-3 gap-3">
+                <div id="add-money-box">
+                    <div  class="card bg-base-100 shadow-xl">
+                        <figure class="px-10 pt-10">
+                          <img class="w-/6"
+                            src="./Payoo-MFS-Resources-main/assets/wallet1.png"
+                            alt=""
+                            class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Add Money</h2>
+                          
+                    
+                        </div>
+                </div>
+                  </div>
+
+
+                  <div id="cash-out-box"><div  class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img class="w-/6"
+                        src="./Payoo-MFS-Resources-main/assets/wallet1.png"
+                        alt=""
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Cash Out</h2>
+                      
+                
+                    </div>
+                  </div></div>
+                
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img class="w-/6"
+                        src="./Payoo-MFS-Resources-main/assets/wallet1.png"
+                        alt=""
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Add Money</h2>
+                      
+                
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img class="w-/6"
+                        src="./Payoo-MFS-Resources-main/assets/wallet1.png"
+                        alt=""
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Add Money</h2>
+                      
+                
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img class="w-/6"
+                        src="./Payoo-MFS-Resources-main/assets/wallet1.png"
+                        alt=""
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Add Money</h2>
+                      
+                
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img class="w-/6"
+                        src="./Payoo-MFS-Resources-main/assets/wallet1.png"
+                        alt=""
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">transaction</h2>
+                      
+                
+                    </div>
+                  </div>
+
+
+
+                  
+            </div>
+    
+    
+        </main>
+
+
+        <!-- form section -->
+         <div id="addmoney-form" class="space-y-2">
+            <h1 class="text-2xl font-bold mt-10">Add Money</h1>
+            <select class="select select-bordered w-full ">
+                <option disabled selected>Select Bankoption>
+                <option>DBBL</option>
+                <option>AB</option>
+              </select>
+              <br> <br>
+              <label  for="">account number</label><br>
+              <input id="account-number" type="text" placeholder="account number" class="input input-bordered w-full " /><br><br>
+              <label for="">Amount</label> <br>
+              <input id="ammount" type="text" placeholder="amount" class="input input-bordered w-full " /><br><br>
+              <label for="">pin</label> <br>
+              <input id="pin-number" type="text" placeholder="pin" class="input input-bordered w-full " /><br><br>
+              <button  id="add-money-btn" class="btn btn-primary w-full">Add money</button>
+         </div>
+<!-- Cash out form -->
+<div id="cashout-form" class="space-y-2">
+    <h1 class="text-2xl font-bold mt-10">cashout</h1>
+    <select class="select select-bordered w-full ">
+        <option disabled selected>Select Bankoption>
+        <option>DBBL</option>
+        <option>AB</option>
+      </select>
+      <br> <br>
+      <label  for="">account number</label><br>
+      <input id="account-number" type="text" placeholder="account number" class="input input-bordered w-full " /><br><br>
+      <label for="">Amount</label> <br>
+      <input id="ammount" type="text" placeholder="amount" class="input input-bordered w-full " /><br><br>
+      <label for="">pin</label> <br>
+      <input id="pin-number" type="text" placeholder="pin" class="input input-bordered w-full " /><br><br>
+      <button  id="cashout-btn" class="btn btn-primary w-full">cashout</button>
+ </div>
+
+    </header>
+    <script src="../utilities/utilities.js"></script>
+    <script src="../js/addMoner.js"></script>
+    <script src="../js/cashout.js"></script>
+</body>
+</html>
